@@ -26,3 +26,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add README.md
 - Add MIT LICENSE.md file
 - Specify guidelines in CONTRIBUTING.md file
+- Serve static files using `file-loader`
+- Add favicon

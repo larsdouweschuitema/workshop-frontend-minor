@@ -6,10 +6,19 @@ module.exports = {
     entry: { 
         app: './src/main.js',
     },
+    module: {
+        rules: [
+            {
+                test: /\.jpe?g$|\.ico$|\.png$|\.svg$|\.woff$|\.ttf$/,
+                loader: 'file-loader?name=[name].[ext]'
+            }
+        ]
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Funda | Search homes in the Netherlands',
+            favicon: 'src/public/favicon-32x32.png',
             template: 'src/public/index.html',
         }),
     ],
