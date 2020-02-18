@@ -8,6 +8,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+- Translations
+- JSON server with stubbed data
+- Assets file-loader
 
 ## [0.0.1] - 2020-02-18
 ### Added
@@ -20,3 +23,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Prevent automatic version prefixing when updating dependencies using `.yarnrc` file
 - Ignore `/node_modules` and `/dist` directories by adding `.gitignore` file
 - Add`scripts` for production build and development mode to `package.json`
+- Update README.md with prerequisites and installation instruction sections
