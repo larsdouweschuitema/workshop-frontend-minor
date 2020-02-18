@@ -23,4 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Prevent automatic version prefixing when updating dependencies using `.yarnrc` file
 - Ignore `/node_modules` and `/dist` directories by adding `.gitignore` file
 - Add`scripts` for production build and development mode to `package.json`
-- Update README.md with prerequisites and installation instruction sections
+- Add README.md
+- Add MIT LICENSE.md file
+- Specify guidelines in CONTRIBUTING.md file

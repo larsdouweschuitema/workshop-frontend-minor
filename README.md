@@ -1,3 +1,15 @@
+<div align="center">
+  <h1>Funda Workshop Web Development Minor</h1>
+</div>
+
+## Table of contents
+
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Tech stack](#tech-stack)
+- [Contributing](#contributing)
+- [Licenses](#licenses)
+
 ## Prerequisites
 
 Make sure you have installed all of the following prerequisites on your development machine:
@@ -29,3 +41,16 @@ Create production build
 ```
 $ yarn build
 ```
+
+## Tech stack
+
+- Package manager `yarn`
+- Module bundler `webpack`
+
+## Contributing
+
+To contribute to this repository see the [CONTRIBUTING.md](CONTRIBUTING.md) file for details
+
+## Licenses
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
