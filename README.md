@@ -51,7 +51,7 @@ $ yarn build
 
 ## Features
 
-- Consistent code styles using `.editorconfig`
+- Consistent code styles using `.editorconfig` and `eslint`
 
 ## Contributing
 

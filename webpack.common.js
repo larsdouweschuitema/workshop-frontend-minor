@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const VueLoaderPlugin = require("vue-loader/lib/plugin")
 
 module.exports = {
-    entry: { 
+    entry: {
         app: './src/main.js',
     },
     resolve: {
@@ -18,6 +18,12 @@ module.exports = {
             {
                 test: /\.vue$/,
                 loader: "vue-loader"
+            },
+            {
+              enforce: 'pre',
+              test: /\.(js|vue)$/,
+              loader: 'eslint-loader',
+              exclude: /node_modules/
             },
             {
                 test: /\.js$/,

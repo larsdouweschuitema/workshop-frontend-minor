@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import logo from '@/assets/img/logo.svg';
+import logo from '@/assets/img/logo.svg'
 
 export default {
-    data() {
-        return {
-            logo
-        }
+  data() {
+    return {
+      logo
     }
+  }
 }
 </script>
