@@ -51,6 +51,9 @@ $ yarn build
 
 To contribute to this repository see the [CONTRIBUTING.md](CONTRIBUTING.md) file for details
 
+We use `.editorconfig` to define and maintain consistent coding styles between different editors and IDEs.
+Please check [editorconfig.org](https://www.editorconfig.org) if your IDE requires a plugin or supports EditorConfig by default.
+
 ## Licenses
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
