@@ -7,6 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Tech stack](#tech-stack)
+- [Features](#features)
 - [Contributing](#contributing)
 - [Licenses](#licenses)
 
@@ -46,6 +47,11 @@ $ yarn build
 
 - Package manager `yarn`
 - Module bundler `webpack`
+- Client-side framework `vue`
+
+## Features
+
+- Consistent code styles using `.editorconfig`
 
 ## Contributing
 

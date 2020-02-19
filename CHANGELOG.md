@@ -28,3 +28,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Specify guidelines in CONTRIBUTING.md file
 - Serve static files using `file-loader`
 - Add favicon
+- Support defining and maintaining of consistent coding styles using `.editorconfig`
