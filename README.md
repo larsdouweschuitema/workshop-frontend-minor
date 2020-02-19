@@ -64,6 +64,7 @@ $ yarn build
 - State management `vuex`
 - Data fetchig `axios`
 - Linter `eslint`
+- Unit testing `jest`
 
 ## Features
 
