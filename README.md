@@ -62,6 +62,7 @@ $ yarn build
 - Client-side framework `vue`
 - Router `vue-router`
 - State management `vuex`
+- Data fetchig `axios`
 - Linter `eslint`
 
 ## Features
