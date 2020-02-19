@@ -31,10 +31,16 @@ Install dependencies using `yarn`
 $ yarn install
 ```
 
-Run app in development mode
+Run client in development mode
 
 ```
 $ yarn start
+```
+
+Run server in development mode
+
+```
+$ yarn run server
 ```
 
 Create production build
@@ -58,6 +64,8 @@ $ yarn build
 - Expose local servers over secure tunnels to the public internet using `ngrok`
 - Git hooks `husky`
 - CSS extraction on production using `mini-css-extract-plugin`
+- Simulate backend REST API using `json-server` and `faker`
+- Run client and server concurrent using `concurrently`
 
 ## Contributing
 
