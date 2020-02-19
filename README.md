@@ -49,14 +49,15 @@ $ yarn build
 - Module bundler `webpack`
 - Client-side framework `vue`
 - Linter `eslint`
-- Git hooks `husky`
 
 ## Features
 
 - Consistent code styles using `.editorconfig` and `eslint`
 - Split development and production `webpack` configurations using `webpack-merge`
-- CSS extraction on production using `mini-css-extract-plugin`
 - Hot reloading during local development using `webpack-dev-server`
+- Expose local servers over secure tunnels to the public internet using `ngrok`
+- Git hooks `husky`
+- CSS extraction on production using `mini-css-extract-plugin`
 
 ## Contributing
 
