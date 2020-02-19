@@ -31,10 +31,16 @@ Install dependencies using `yarn`
 $ yarn install
 ```
 
-Run client in development mode
+Run client and server concurrent in development mode
 
 ```
 $ yarn start
+```
+
+Run client in development mode
+
+```
+$ yarn run client
 ```
 
 Run server in development mode
@@ -54,6 +60,8 @@ $ yarn build
 - Package manager `yarn`
 - Module bundler `webpack`
 - Client-side framework `vue`
+- Router `vue-router`
+- State management `vuex`
 - Linter `eslint`
 
 ## Features
