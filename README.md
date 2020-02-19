@@ -15,8 +15,8 @@
 
 Make sure you have installed all of the following prerequisites on your development machine:
 
-- Node.js - [Download & Install Node.js](https://nodejs.org/en/download/)
-- Yarn package manager - [Download & Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
+- Node.js (`>=10.0.0 <12.0.0`) - [Download & Install Node.js](https://nodejs.org/en/download/)
+- Yarn package manager (`>=1.19.1`) - [Download & Install Yarn](https://yarnpkg.com/en/docs/install#mac-stable)
 
 ## Installation
 
