@@ -2,12 +2,19 @@
   <h1>Funda Workshop Web Development Minor</h1>
 </div>
 
+Mocked example of the funda Frontend Monolith. In reality the tech stack is slightly different. It contains both modern and legacy code:
+- C#
+- .NET core
+- jQuery components (legacy code)
+- Vue (recently implemented)
+
 ## Table of contents
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Tech stack](#tech-stack)
 - [Features](#features)
+- [Testing](#testing)
 - [Contributing](#contributing)
 - [Licenses](#licenses)
 
@@ -76,6 +83,14 @@ $ yarn build
 - CSS extraction on production using `mini-css-extract-plugin`
 - Simulate backend REST API using `json-server` and `faker`
 - Run client and server concurrent using `concurrently`
+
+## Testing
+
+Run all tests
+
+```
+$ yarn test
+```
 
 ## Contributing
 
