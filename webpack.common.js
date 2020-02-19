@@ -1,20 +1,47 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const VueLoaderPlugin = require("vue-loader/lib/plugin")
 
 module.exports = {
     entry: { 
         app: './src/main.js',
     },
+    resolve: {
+        extensions: [".js", ".vue"],
+        alias: {
+          '@': path.resolve('src'),
+        }
+    },
     module: {
         rules: [
             {
-                test: /\.jpe?g$|\.ico$|\.png$|\.svg$|\.woff$|\.ttf$/,
-                loader: 'file-loader?name=[name].[ext]'
+                test: /\.vue$/,
+                loader: "vue-loader"
+            },
+            {
+                test: /\.js$/,
+                loader: 'babel-loader',
+                exclude: file => (
+                  /node_modules/.test(file) &&
+                  !/\.vue\.js/.test(file)
+                )
+            },
+            {
+              test: /\.scss$/,
+              use: ["vue-style-loader", "css-loader", "sass-loader"]
+            },
+            {
+                test: /\.(svg|png)$/i,
+                loader: 'file-loader',
+                options: {
+                    outputPath: 'assets/images',
+                }
             }
         ]
     },
     plugins: [
+        new VueLoaderPlugin(),
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Funda | Search homes in the Netherlands',
