@@ -9,8 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 - Translations
-- JSON server with stubbed data
-- Assets file-loader
+- Router
+- Multiple endpoints
+- Semver automatic versioning
+- Sorting, filtering data
+- Client API service
+- Store management
+- Unit testing
+- E2E testing
 
 ## [0.0.1] - 2020-02-18
 ### Added
