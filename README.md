@@ -41,7 +41,7 @@ $ yarn install
 Run client and server concurrent in development mode
 
 ```
-$ yarn start
+$ yarn dev
 ```
 
 Run client in development mode
