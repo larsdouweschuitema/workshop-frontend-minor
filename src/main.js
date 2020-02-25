@@ -6,6 +6,9 @@ import App from '@/components/App'
 import routes from '@/routes'
 import store from '@/store'
 
+require('@/assets/styles/_reset.scss')
+require('@/assets/styles/app.scss')
+
 Vue.use(VueRouter)
 Vue.use(Vuex)
 

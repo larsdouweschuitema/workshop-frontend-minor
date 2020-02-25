@@ -1,9 +1,9 @@
 import Home from '@/pages/Home.vue'
-import Foo from '@/pages/Foo.vue'
+import HouseValue from '@/pages/HouseValue.vue'
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/foo', component: Foo },
+  { path: '/housevalue', component: HouseValue },
 ]
 
 export default routes
