@@ -40,7 +40,7 @@ Given the amount of engineers per team, make sure to make use of mob/pair progra
 
 ## Team Buy & Move
 
-**Support:** Daniar Suprianto
+**Support:** Daniar Suprianto + Melvin Zehl
 
 **Feature:** Implement page and form /housevalue
 
