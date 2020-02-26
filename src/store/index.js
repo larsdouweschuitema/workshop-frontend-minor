@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 const state = {
   houses: [],
+  houseType: ''
 }
 
 const store = new Vuex.Store({

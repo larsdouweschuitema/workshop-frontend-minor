@@ -19,7 +19,7 @@
       </div>
     </form>
 
-    <span>type: {{houseType}}</span>
+    <span>type: {{ selectedType }}</span>
   </section>
 </template>
 
@@ -29,26 +29,18 @@ import filterData from '@/lib/filter-data'
 export default {
   data() {
     return {
-      houseType: ''
+      selectedType: ''
     }
   },
 
   methods: {
     handleTypeFilter(event) {
-      this.setHouseType(event.target.value)
+      this.setSelectedType(event.target.value)
 
-      if (event.target.value === 'all') {
-        return // all data
-      }
-
-      const options = { key: 'type', value: event.target.value }
-      const filteredData = filterData(this.$store.state.houses, options)
-
-      // TODO: make a commit to the store that takes all filtered things and
-      // sets the store data to the new data. Or return all data otherwise.
+      return this.$store.commit('setHouseType', { houseType: event.target.value })
     },
-    setHouseType(type) {
-      this.houseType = type
+    setSelectedType(type) {
+      this.selectedType = type
     }
   }
 }
