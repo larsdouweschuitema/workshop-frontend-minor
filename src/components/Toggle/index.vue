@@ -45,19 +45,18 @@
 </script>
 
 <style lang="scss">
-  $toggle-border-radius: 10px;
-  $toggle-label-border-radius: 7px;
-
   .toggle {
-    display: flex;
-    padding: 0.5rem;
-    border-radius: $toggle-border-radius;
+    margin: 0.2rem;
+    display: block;
+    padding: 0.1rem;
+    border-radius: 9px;
     background: white;
   }
 
   .toggle_label {
+    margin: 0.2rem;
     padding: 0.1rem;
-    border-radius: $toggle-label-border-radius;
+    border-radius: 6px;
     background: pink;
     text-align: center;
   }
