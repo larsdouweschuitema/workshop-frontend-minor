@@ -20,16 +20,16 @@ Given the amount of engineers per team, make sure to make use of mob/pair progra
 
 **Members:**
 
-Aidan
-Bas
-Lennart
-Leroy
-Manouk
-Nick
-Robert
-Roy
-Tabish
-Wouter
+- Aidan
+- Bas
+- Lennart
+- Leroy
+- Manouk
+- Nick
+- Robert
+- Roy
+- Tabish
+- Wouter
 
 ## Team #2 Search & Find
 
@@ -39,16 +39,16 @@ Wouter
 
 **Members:**
 
-Damian
-Heralt
-Joan
-Kyle
-Marissa
-Mohamad
-Rick
-Simone
-Thijs B
-Monika
+- Damian
+- Heralt
+- Joan
+- Kyle
+- Marissa
+- Mohamad
+- Rick
+- Simone
+- Thijs B
+- Monika
 
 ## Team #3 Realtors
 
@@ -58,16 +58,16 @@ Monika
 
 **Members:**
 
-Daniel
-Giovanni
-Kris
-Lien
-Marjolein
-Michel
-Reinier
-Sjors
-Tim
-Nathan
+- Daniel
+- Giovanni
+- Kris
+- Lien
+- Marjolein
+- Michel
+- Reinier
+- Sjors
+- Tim
+- Nathan
 
 ## Team #4 Funda in Business
 
@@ -77,15 +77,15 @@ Nathan
 
 **Members:**
 
-Deanna
-Kaan
-Kevin K
-Lars
-Marten
-Mees
-Ramon
-Thijs s
-Tomas
+- Deanna
+- Kaan
+- Kevin K
+- Lars
+- Marten
+- Mees
+- Ramon
+- Thijs
+- Tomas
 
 ## Team #5 Buy & Move
 
@@ -95,15 +95,15 @@ Tomas
 
 **Members:**
 
-Gijs
-Jaouad
-Kevin C
-Jennifer
-Coen
-Max
-Randy
-Stefan
-Wessel
+- Gijs
+- Jaouad
+- Kevin C
+- Jennifer
+- Coen
+- Max
+- Randy
+- Stefan
+- Wessel
 
 ## Agile Coach
 
