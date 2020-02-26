@@ -10,6 +10,8 @@
       <input id="house-no" v-model="formData.houseNo" placeholder="99" />
     </p>
 
+    <p class="feedback"></p>
+
     <button @click.prevent="onSubmit">Continue</button>
   </form>
 </template>
@@ -30,14 +32,10 @@ export default {
     onSubmit() {
       const houses = Store.state.houses;
 
-      console.log("data: ", houses);
-
       const userInput = {
         zip_code: this.formData.zipCode,
         house_number: this.formData.houseNo
       };
-
-      console.log("user input: ", userInput);
 
       const match = houses.filter(
         item =>
@@ -47,7 +45,9 @@ export default {
 
       console.log("matched house: ", match[0]);
 
-      alert(match[0]);
+      document.querySelector(
+        ".feedback"
+      ).innerHTML = `We found your house: ${match[0].street_address}, ${match[0].zip_code} ${match[0].city}`;
     }
   }
 };
