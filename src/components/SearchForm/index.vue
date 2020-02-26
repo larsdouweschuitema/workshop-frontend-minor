@@ -27,7 +27,7 @@ export default {
     filterHouses() {
       return this.houses.filter(house => {
         
-        return house.city.includes(this.searchInput)
+        return house.city.includes(this.searchInput) || house.street_address.includes(this.searchInput)
 
       })
     }
