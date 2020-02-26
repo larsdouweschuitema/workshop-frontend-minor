@@ -56,10 +56,9 @@
   }
 
   .toggle_label {
-    flex: 0 0 50%;
-    padding: 0.5rem 0;
+    padding: 0.1rem;
     border-radius: $toggle-label-border-radius;
-    background: white;
+    background: pink;
     text-align: center;
   }
 
