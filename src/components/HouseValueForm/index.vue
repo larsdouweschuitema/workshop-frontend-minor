@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import Store from "@/store";
+
 export default {
   data() {
     return {
@@ -26,39 +28,26 @@ export default {
   },
   methods: {
     onSubmit() {
-      const data = [
-        {
-          id: 0,
-          city: "Emardview",
-          zip_code: "48566",
-          street_address: "70421 Jefferey Fall",
-          type: "appartment",
-          price: "283.274,00 €",
-          isSaved: true
-        },
-        {
-          id: 1,
-          city: "South Ceciliamouth",
-          zip_code: "77000",
-          street_address: "91604 Marcellus Manors",
-          type: "house",
-          price: "160.837,00 €",
-          isSaved: false
-        }
-      ];
+      const houses = Store.state.houses;
+
+      console.log("data: ", houses);
 
       const userInput = {
         zip_code: this.formData.zipCode,
-        house_number: this.formData.houseN
+        house_number: this.formData.houseNo
       };
 
       console.log("user input: ", userInput);
 
-      const match = data.filter(
+      const match = houses.filter(
         item =>
-          item.zip_code === userInput.zip_code &&
-          item.house_number === userInput.house_number
+          item.zip_code == userInput.zip_code &&
+          item.street_address.split(" ")[0] === userInput.house_number
       );
+
+      console.log("matched house: ", match[0]);
+
+      alert(match[0]);
     }
   }
 };
