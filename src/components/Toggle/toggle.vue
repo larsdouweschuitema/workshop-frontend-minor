@@ -1,0 +1,69 @@
+<template>
+  <form class="toggle" @change="onChange">
+    <input
+      type="radio"
+      id="overview-input"
+      class="toggle_radio off-screen"
+      name="toggle-input"
+      value="all"
+      checked
+    >
+    <label
+      for="overview-input"
+      class="toggle_label"
+    >
+      overview
+    </label>
+    <input
+      type="radio"
+      id="favorites-input"
+      class="toggle_radio off-screen"
+      name="toggle-input"
+      value="fav"
+    >
+    <label
+      for="favorites-input"
+      class="toggle_label"
+    >
+      favorieten
+    </label>
+  </form>
+</template>
+
+<script>
+  export default {
+    methods: {
+      onChange(event) {
+        if (event.target.value === 'all') {
+          return this.$emit('all-click')
+        }
+
+        return this.$emit('fav-click')
+      }
+    }
+  }
+</script>
+
+<style lang="scss">
+  $toggle-border-radius: 10px;
+  $toggle-label-border-radius: 7px;
+
+  .toggle {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: $toggle-border-radius;
+    background: white;
+  }
+
+  .toggle_label {
+    flex: 0 0 50%;
+    padding: 0.5rem 0;
+    border-radius: $toggle-label-border-radius;
+    background: white;
+    text-align: center;
+  }
+
+  .toggle_radio:checked + .toggle__label {
+    background: yellow;
+  }
+</style>
