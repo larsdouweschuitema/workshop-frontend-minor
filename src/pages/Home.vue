@@ -4,16 +4,17 @@
         <div class="container">
           <Sidebar />
           <div class="search-results">
-            
+
             <template v-if="houses.length === 0">
               <div>
                 0 search results
               </div>
               <div>
+                <img src="https://i.imgur.com/9j6uLcP.gif" alt="">
                 Select a larger search area or remove one or more filters. Some filters, or a combination of filters, yield no results.
               </div>
             </template>
-            
+
             <div class="search-results__item" v-for="house of houses" v-bind:key="house.id">
               <img class="search-results__item-image" src="https://cloud.funda.nl/valentina_media/124/565/893_720x480.jpg" />
               <div class="search-results__item-content">
@@ -79,14 +80,14 @@ export default {
   }
 
   .search-results {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     padding-left: 1.5rem;
     width: 100%;
   }
 
   .search-results__item {
-    display: flex; 
+    display: flex;
     border-bottom: 1px solid #ededed;
     padding-bottom: 1rem;
 
