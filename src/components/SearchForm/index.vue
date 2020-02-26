@@ -22,12 +22,12 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(this.filterHouses())
+      this.filterHouses()
     },
     filterHouses() {
       return this.houses.filter(house => {
         
-        return house.city.includes(this.searchInput) || house.street_address.includes(this.searchInput)
+        return house.city.toLowerCase().includes(this.searchInput.toLowerCase()) || house.street_address.toLowerCase().includes(this.searchInput.toLowerCase())
 
       })
     }
