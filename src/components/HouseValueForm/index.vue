@@ -9,9 +9,8 @@
       <label for="house-no">House no.</label>
       <input id="house-no" v-model="formData.houseNo" placeholder="99" />
     </p>
-    
 
-    <button @click.prevent="onSubmit">Continue</button> 
+    <button @click.prevent="onSubmit">Continue</button>
   </form>
 </template>
 
@@ -20,28 +19,60 @@ export default {
   data() {
     return {
       formData: {
-        zipCode: '',
-        houseNo: ''
+        zipCode: "",
+        houseNo: ""
       }
-    }
+    };
   },
   methods: {
     onSubmit() {
-      alert(this.formData.zipCode)
+      const data = [
+        {
+          id: 0,
+          city: "Emardview",
+          zip_code: "48566",
+          street_address: "70421 Jefferey Fall",
+          type: "appartment",
+          price: "283.274,00 €",
+          isSaved: true
+        },
+        {
+          id: 1,
+          city: "South Ceciliamouth",
+          zip_code: "77000",
+          street_address: "91604 Marcellus Manors",
+          type: "house",
+          price: "160.837,00 €",
+          isSaved: false
+        }
+      ];
+
+      const userInput = {
+        zip_code: this.formData.zipCode,
+        house_number: this.formData.houseN
+      };
+
+      console.log("user input: ", userInput);
+
+      const match = data.filter(
+        item =>
+          item.zip_code === userInput.zip_code &&
+          item.house_number === userInput.house_number
+      );
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-  .house-value-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+.house-value-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-  input {
-    margin-bottom: 1rem;
-    width: 100%;
-  }
+input {
+  margin-bottom: 1rem;
+  width: 100%;
+}
 </style>
