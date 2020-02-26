@@ -6,6 +6,7 @@
     <toggle @overview-click="choice = 'overview'" @favorite-click="choice = 'favorite'" />
 
     <div v-if="choice === 'favorite'">
+      <h3> yeet </h3>
     </div>
     <Sidebar />
     <div v-if="choice === 'overview'" class="search-results">
@@ -80,6 +81,10 @@ a {
     &:hover {
         color: #00517f;
     }
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 .container {
