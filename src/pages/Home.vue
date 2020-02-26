@@ -3,7 +3,7 @@
   <SearchForm />
   <div class="container">
 
-    <app-toggle @all-click="choice = 'overview'" @fav-click="choice = 'favorite'" />
+    <toggle @overview-click="choice = 'overview'" @favorite-click="choice = 'favorite'" />
 
     <div v-if="choice === 'favorite'">
     </div>
@@ -42,7 +42,7 @@
 /* eslint-disable */
 import SearchForm from '@/components/SearchForm'
 import Sidebar from '@/components/Sidebar'
-import Toggle from '~/components/Toggle/toggle'
+import Toggle from '~/components/Toggle'
 
 
 export default {
