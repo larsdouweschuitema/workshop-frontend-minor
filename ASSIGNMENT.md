@@ -56,8 +56,6 @@ Monika
 
 **Feature:** Implement filter "property type"
 
-**Tip:** Look
-
 **Members:**
 
 Daniel
