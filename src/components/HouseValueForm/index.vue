@@ -47,7 +47,7 @@ export default {
 
       document.querySelector(
         ".feedback"
-      ).innerHTML = `We found your house: ${match[0].street_address}, ${match[0].zip_code} ${match[0].city}`;
+      ).innerHTML = `( ͡° ͜ʖ ͡°) We found your house: ${match[0].street_address}, ${match[0].zip_code} ${match[0].city}`;
     }
   }
 };
