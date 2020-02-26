@@ -36,6 +36,27 @@
 <script>
 import SearchForm from '@/components/SearchForm'
 import Sidebar from '@/components/Sidebar'
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex) 
+
+const store = new Vuex.Store({
+  state: {
+    favorites: []
+  },
+  mutations: {
+    insert(state, house) {
+      state.favorites.push(house)
+    },
+    remove(state, house) {
+      state.favorites.splice( state.favorites.indexOf(house), 1 )
+    },
+    removeAll(state) {
+      state.favorites = []
+    }
+  }
+})
 
 export default {
   computed: {
@@ -46,7 +67,7 @@ export default {
   components: {
     SearchForm,
     Sidebar
-  }
+  },
 }
 </script>
 
