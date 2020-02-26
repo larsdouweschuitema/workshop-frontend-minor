@@ -5,7 +5,7 @@
       id="overview-input"
       class="toggle_radio off-screen"
       name="toggle-input"
-      value="all"
+      value="overview"
       checked
     >
     <label
@@ -19,7 +19,7 @@
       id="favorites-input"
       class="toggle_radio off-screen"
       name="toggle-input"
-      value="fav"
+      value="favorite"
     >
     <label
       for="favorites-input"
@@ -31,14 +31,15 @@
 </template>
 
 <script>
+/* eslint-disable */
   export default {
     methods: {
       onChange(event) {
-        if (event.target.value === 'all') {
-          return this.$emit('all-click')
+        if (event.target.value === 'overview') {
+          return this.$emit('overview-click')
         }
 
-        return this.$emit('fav-click')
+        return this.$emit('favorite-click')
       }
     }
   }
