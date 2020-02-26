@@ -11,12 +11,31 @@
 export default {
   data() {
     return {
-      searchInput: null
+      searchInput: null,
+      filteredHouses: []
+    }
+  },
+  computed: {
+    houses () {
+      return this.$store.state.houses || []
     }
   },
   methods: {
     onSubmit() {
-      alert(this.searchInput)
+      console.log(this.filterHouses())
+    },
+    filterHouses() {
+      return this.houses.filter(house => {
+        
+        return house.city.includes(this.searchInput)
+
+      })
+    }
+
+  },
+  watch: {
+    searchInput: function() {
+      this.filterHouses()
     }
   }
 }
