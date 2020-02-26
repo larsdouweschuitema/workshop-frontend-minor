@@ -25,6 +25,7 @@
                   <li>3 rooms</li>
                 </ul>
                 <div><a href="https://www.funda.nl/en/makelaars/terneuzen/20077-van-huisstede-makelaardij-og/">Van Huisstede makelaardij o.g.</a></div>
+                <SaveButton />
               </div>
             </div>
 
@@ -36,6 +37,7 @@
 <script>
 import SearchForm from '@/components/SearchForm'
 import Sidebar from '@/components/Sidebar'
+import SaveButton from '@/components/SaveButton'
 
 export default {
   computed: {
@@ -45,7 +47,8 @@ export default {
   },
   components: {
     SearchForm,
-    Sidebar
+    Sidebar,
+    SaveButton
   }
 }
 </script>
