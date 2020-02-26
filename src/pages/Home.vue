@@ -42,7 +42,7 @@
 /* eslint-disable */
 import SearchForm from '@/components/SearchForm'
 import Sidebar from '@/components/Sidebar'
-import Toggle from '~/components/Toggle'
+import Toggle from '@/components/Toggle'
 
 
 export default {

@@ -36,10 +36,9 @@
     methods: {
       onChange(event) {
         if (event.target.value === 'overview') {
-          return this.$emit('overview-click')
+          return ('overview-click')
         }
-
-        return this.$emit('favorite-click')
+        return ('favorite-click')
       }
     }
   }
