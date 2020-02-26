@@ -30,8 +30,6 @@ Given the amount of engineers per team, make sure to make use of mob/pair progra
 
 **Feature:** Implement filter "property type"
 
-**Tip:** Look
-
 ## Team Funda in Business
 
 **Support:** Alexandros Litridis
