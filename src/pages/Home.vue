@@ -11,7 +11,6 @@
               </div>
               <div>
                 <img src="https://i.imgur.com/9j6uLcP.gif" alt="">
-                Select a larger search area or remove one or more filters. Some filters, or a combination of filters, yield no results.
               </div>
             </template>
 
